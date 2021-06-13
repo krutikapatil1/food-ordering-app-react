@@ -1,0 +1,10 @@
+.meals-summary {
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    background-color: #383838;
+    padding: 10px 30px;
+    text-align: center;
+}
+
+.meals-summary__body {
+    font-size: 22px;
+}

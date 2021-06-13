@@ -13,13 +13,13 @@
 }
 
 .cart__icon {
-    font-size: 24px;
+    font-size: 28px;
     margin-right: 20px;
 }
 
 .cart__text {
     margin-right: 20px;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 .cart__badge {
@@ -27,4 +27,5 @@
     border-radius: 25px;
     padding: 0.25rem 1rem;
     font-weight: bold;
+    font-size: 20px;
 }

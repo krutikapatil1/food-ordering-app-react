@@ -1,0 +1,25 @@
+.meal-item {
+    list-style-type: none;
+}
+
+.meal-item__name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.meal-item__description {
+    padding: 5px 0;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.meal-item__price {
+    color: maroon;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+hr {
+    margin: 10px;
+}

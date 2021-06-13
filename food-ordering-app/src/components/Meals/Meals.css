@@ -1,0 +1,10 @@
+.meals {
+    color: white;
+    position: fixed;
+    top: 35%;
+    left: 40%;
+    width: 45em;
+    height: 18em;
+    margin-top: -9em;
+    margin-left: -15em;
+}
