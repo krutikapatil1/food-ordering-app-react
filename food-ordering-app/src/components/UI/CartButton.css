@@ -1,0 +1,30 @@
+.cart {
+    display: flex;
+    align-items: center;
+    background-color: rgb(78, 8, 8);
+    margin-right: 4rem;
+    padding: 1.5rem 1.5rem;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 20px;
+    max-height: 20px;
+    color: white;
+}
+
+.cart__icon {
+    font-size: 24px;
+    margin-right: 20px;
+}
+
+.cart__text {
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+.cart__badge {
+    background-color: #b94517;
+    border-radius: 25px;
+    padding: 0.25rem 1rem;
+    font-weight: bold;
+}
