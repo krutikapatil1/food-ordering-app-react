@@ -5,7 +5,7 @@
     margin-right: 4rem;
     padding: 1.5rem 1.5rem;
     justify-content: space-between;
-    font-size: 18px;
+    font-size: 12px;
     font-weight: bold;
     border-radius: 20px;
     max-height: 20px;
@@ -13,19 +13,17 @@
 }
 
 .cart__icon {
-    font-size: 28px;
-    margin-right: 20px;
+    font-size: 20px;
+    margin-right: 10px;
 }
 
 .cart__text {
-    margin-right: 20px;
-    font-size: 20px;
+    margin-right: 10px;
 }
 
 .cart__badge {
     background-color: #b94517;
     border-radius: 25px;
-    padding: 0.25rem 1rem;
+    padding: 0.25rem 0.5rem;
     font-weight: bold;
-    font-size: 20px;
 }
