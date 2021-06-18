@@ -1,0 +1,19 @@
+.input-box {
+  display: flex;
+  align-items: center;
+}
+
+.input-box__label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.input-box__input {
+  width: 30px;
+  height: 1.2rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 4px;
+  text-align: center;
+  font-weight: 600;
+}
