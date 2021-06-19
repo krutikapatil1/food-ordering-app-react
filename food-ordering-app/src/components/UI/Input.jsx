@@ -1,5 +1,7 @@
 import "./Input.css";
 import InputForm from "./InputForm";
+import Button from "../UI/Button";
+
 const Input = (props) => {
   return (
     <div className="input">
@@ -14,7 +16,7 @@ const Input = (props) => {
           defaultValue: "1",
         }}
       />
-      <button className="input__button">{props.buttonText}</button>
+      <Button buttonText={props.buttonText}></Button>
     </div>
   );
 };
