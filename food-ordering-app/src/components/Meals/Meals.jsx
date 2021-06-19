@@ -1,7 +1,6 @@
 import MealsSummary from "./MealsSummary";
 import AvailableMeals from "./AvailableMeals";
 import "./Meals.css";
-import Cart from "../Cart/Cart";
 const Meals = () => {
   const DUMMY_MEALS = [
     {
@@ -38,8 +37,7 @@ const Meals = () => {
   return (
     <div className="meals">
       <MealsSummary />
-      <AvailableMeals meals={DUMMY_MEALS} />
-      <Cart itemName="Sushi" price="26.98" />
+      <AvailableMeals meals={DUMMY_MEALS} />{" "}
     </div>
   );
 };

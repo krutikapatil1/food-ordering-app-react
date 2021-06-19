@@ -2,12 +2,12 @@ import { Fragment } from "react";
 import reactMeals from "../../assets/react-meals.jpg";
 import CartButton from "../UI/CartButton";
 import "./Header.css";
-const Header = () => {
+const Header = (props) => {
   return (
     <Fragment>
       <header className="header">
         <h1 className="header__heading">React Meals</h1>
-        <CartButton />
+        <CartButton onClick={props.onShowCart} />
       </header>
       <img
         src={reactMeals}

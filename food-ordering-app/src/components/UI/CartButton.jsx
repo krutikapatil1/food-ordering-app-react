@@ -1,8 +1,8 @@
 import "./CartButton.css";
 import { FaShoppingCart } from "react-icons/fa";
-const CartButton = () => {
+const CartButton = (props) => {
   return (
-    <button className="cart">
+    <button className="cart" onClick={props.onClick}>
       <span className="cart__icon">
         <FaShoppingCart />
       </span>
