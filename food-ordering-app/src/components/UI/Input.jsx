@@ -1,8 +1,8 @@
 import "./Input.css";
 import InputForm from "./InputForm";
-import Button from "../UI/Button";
+import React from "react";
 
-const Input = (props) => {
+const Input = React.forwardRef((props, ref) => {
   return (
     <div className="input">
       <InputForm
@@ -15,9 +15,11 @@ const Input = (props) => {
           step: "1",
           defaultValue: "1",
         }}
+        amountIsValid={props.amountIsValid}
+        ref={ref}
+        onClick={props.onSubmit}
       />
-      <Button buttonText={props.buttonText}></Button>
     </div>
   );
-};
+});
 export default Input;

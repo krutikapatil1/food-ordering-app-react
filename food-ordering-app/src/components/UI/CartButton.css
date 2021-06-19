@@ -10,6 +10,7 @@
     border-radius: 20px;
     max-height: 20px;
     color: white;
+    cursor: pointer;
 }
 
 .cart__icon {
