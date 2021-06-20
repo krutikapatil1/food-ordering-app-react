@@ -3,6 +3,8 @@
     background-color: #383838;
     padding: 10px 30px;
     text-align: center;
+    margin: auto;
+    width: 80%;
 }
 
 .meals-summary__body {
