@@ -3,7 +3,7 @@ import InputForm from "./InputForm";
 import Button from "../UI/Button";
 import React from "react";
 
-const Input = (props) => {
+const Input = React.forwardRef((props, ref) => {
   return (
     <div className="input">
       <InputForm

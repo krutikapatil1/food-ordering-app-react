@@ -9,5 +9,5 @@ const InputForm = React.forwardRef((props, ref) => {
       <input ref={ref} className="input-box__input" {...props.input} />
     </div>
   );
-};
+});
 export default InputForm;
