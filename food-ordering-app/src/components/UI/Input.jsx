@@ -1,11 +1,13 @@
 import "./Input.css";
 import InputForm from "./InputForm";
+import Button from "../UI/Button";
 import React from "react";
 
-const Input = React.forwardRef((props, ref) => {
+const Input = (props) => {
   return (
     <div className="input">
       <InputForm
+        ref={ref}
         input={{
           label: "Amount",
           id: props.id,
@@ -15,10 +17,11 @@ const Input = React.forwardRef((props, ref) => {
           step: "1",
           defaultValue: "1",
         }}
-        amountIsValid={props.amountIsValid}
-        ref={ref}
-        onClick={props.onSubmit}
       />
+      <Button buttonText={props.buttonText} onClick={props.onSubmit}></Button>
+      {!props.isValidAmount && (
+        <p className="input-box__error">Please enter a valid amount</p>
+      )}
     </div>
   );
 });
