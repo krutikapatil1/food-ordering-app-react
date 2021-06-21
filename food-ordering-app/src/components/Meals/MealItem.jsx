@@ -1,36 +1,32 @@
 import "./MealItem.css";
 import Input from "../UI/Input";
-import { Fragment, useRef, useState, useContext } from "react";
+import { Fragment, useRef, useContext, useState } from "react";
 import CartContext from "../../store/cart-context";
 const MealItem = (props) => {
   const amountInputRef = useRef();
   const ctx = useContext(CartContext);
-  const [amountIsValid, setAmountIsValid] = useState(true);
-
-  const addToCartHandler = (enteredAmountNumber) => {
-    ctx.addItem({
-      id: props.id,
-      name: props.name,
-      amount: enteredAmountNumber,
-      price: props.price,
-    });
-  };
-
+  const [isValidAmount, setValidAmount] = useState(true);
   const submitHandler = (event) => {
     event.preventDefault();
-    const enteredAmount = amountInputRef.current.value;
-    const enteredAmountNumber = +enteredAmount;
+    const amountEntered = amountInputRef.current.value;
+    const amountEnteredNumber = +amountEntered;
     if (
-      enteredAmount.trim().length === 0 ||
-      enteredAmountNumber < 1 ||
-      enteredAmountNumber > 5
+      amountEntered.trim().length === 0 ||
+      amountEnteredNumber < 1 ||
+      amountEnteredNumber > 5
     ) {
-      setAmountIsValid(false);
+      setValidAmount(false);
       return;
     }
-    setAmountIsValid(true);
-    addToCartHandler(enteredAmountNumber);
+    setValidAmount(true);
+    const item = {
+      id: props.id,
+      name: props.name,
+      amount: amountEnteredNumber,
+    };
+    ctx.addItem(item);
   };
+
   return (
     <Fragment>
       <div className="meal-item">
@@ -41,16 +37,15 @@ const MealItem = (props) => {
         </ul>
         <Input
           ref={amountInputRef}
-          amountIsValid={amountIsValid}
           id={"amount-" + props.id}
           type="number"
           label="Amount"
           buttonText="+ Add"
           value="0"
           onSubmit={submitHandler}
+          isValidAmount={isValidAmount}
         />
       </div>
-
       <hr />
     </Fragment>
   );
