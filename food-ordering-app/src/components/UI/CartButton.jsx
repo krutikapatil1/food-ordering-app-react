@@ -7,6 +7,7 @@ const CartButton = (props) => {
   const numOfItems = ctx.items.reduce((curAmount, item) => {
     return curAmount + item.amount;
   }, 0);
+
   return (
     <button className="cart" onClick={props.onClick}>
       <span className="cart__icon">

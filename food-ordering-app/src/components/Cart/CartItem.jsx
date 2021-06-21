@@ -1,10 +1,11 @@
 import "./CartItem.css";
 
 const CartItem = (props) => {
+  console.log(props.items);
   return (
     <div className="cart-items">
       {props.items.map((item) => (
-        <div className="cart-item">
+        <div key={item.id} className="cart-item">
           <div className="cart-item__details__amount">
             <div className="cart-item__details">
               <p className="cart-item__details__name">{item.name}</p>

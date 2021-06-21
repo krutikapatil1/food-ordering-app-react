@@ -9,6 +9,7 @@ const Cart = (props) => {
   const totalAmount = `$${ctx.totalAmount.toFixed(2)}`;
   const hasItems = ctx.items.length > 0;
   console.log(ctx);
+  console.log(ctx);
   return (
     <Modal onClose={props.onHideCart}>
       <div className="cart__items">
