@@ -1,13 +1,13 @@
-.cart__heading {
+.cart__items {
     padding: 0;
     margin-bottom: -30px;
 }
 
-.cart__contents {
+.cart__totalAmount {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 10px 0 0;
+    padding: 20px 10px 0 0;
 }
 
 hr {
