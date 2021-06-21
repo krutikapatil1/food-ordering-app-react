@@ -13,7 +13,9 @@ const Cart = (props) => {
   return (
     <Modal onClose={props.onHideCart}>
       <div className="cart__items">
-        <CartItem items={ctx.items} />
+        {ctx.items.map((item) => (
+          <CartItem key={item.id} item={item} />
+        ))}
       </div>
 
       <div className="cart__totalAmount">

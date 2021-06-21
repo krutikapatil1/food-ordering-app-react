@@ -1,6 +1,7 @@
 import "./AvailableMeals.css";
 import Card from "../UI/Card";
 import MealItem from "./MealItem";
+import { FaMailBulk } from "react-icons/fa";
 const AvailableMeals = (props) => {
   return (
     <Card className="meal-list">
